@@ -1,0 +1,30 @@
+.List__Card {
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s;
+  background-color: var(--var-terceary-color);
+  box-shadow: 10px 10px 10px #bebebe, -10px -10px 10px #ffffff;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .List__Card__info {
+    h2 {
+      color: var(--var-terceary-color);
+      background-color: var(--var-primary-color);
+      margin: 0px;
+      padding: 0px;
+    }
+    .Card__info p {
+      display: flex;
+      justify-content: space-evenly;
+      font-size: var(--ssm);
+    }
+  }
+}

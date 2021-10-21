@@ -1,12 +1,11 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import '../assets/styles/routes/App.scss';
-import Layout from "../components/Layout";
-import RickAndMortyAPI from '../components/RickAndMortyAPI';
-import Filter from '../components/Filter';
+import Layout from "../containers/Layout";
+import RickAndMortyAPI from '../containers/RickAndMortyList';
+import Filter from '../containers/Filter';
 import Home from "../pages/Home";
 
 const App = () => (
-
     <BrowserRouter>
     <Layout>
       <Switch>

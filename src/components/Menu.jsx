@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/img/logo.png";
 import "../assets/styles/components/Menu.scss";
 const Menu = () => {
   return (
-    <div className="FinamigaTestBar">
+    <Link to="/" className="FinamigaTestBar">
       <img src={logo} alt="logo" />
       <h1>Finamiga testing</h1>
-    </div>
+    </Link>
   );
 };
 
