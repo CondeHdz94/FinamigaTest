@@ -24,7 +24,11 @@
     .Card__info p {
       display: flex;
       justify-content: space-evenly;
-      font-size: var(--ssm);
+      font-size: var(--sm);
+
+      &:last-child {
+        font-size: var(--ssm);
+      }
     }
   }
 }

@@ -4,6 +4,7 @@ import Layout from "../containers/Layout";
 import RickAndMortyAPI from '../containers/RickAndMortyList';
 import Filter from '../containers/Filter';
 import Home from "../pages/Home";
+import PageError from "../pages/PageError";
 
 const App = () => (
     <BrowserRouter>
@@ -12,6 +13,7 @@ const App = () => (
       <Route exact path='/' component={Home}/>
         <Route exact path='/api' component={RickAndMortyAPI}/>
         <Route exact path='/filter' component={Filter}/>
+        <Route component={PageError}/>
       </Switch>
     </Layout>
     </BrowserRouter>

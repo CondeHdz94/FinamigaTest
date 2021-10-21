@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import useGetProducts from "../hooks/useGetProducts";
 import "../assets/styles/containers/RickAndMortyList.scss";
 import CharacterCard from "../components/CharacterCard";
+import Loading from "../components/Loading";
 
 const API = "https://rickandmortyapi.com/api/character?page=1";
 
@@ -49,7 +50,9 @@ const RickAndMortyAPI = () => {
     );
   }
 
-  return <div className="">Loading...</div>;
+  return (
+  <Loading/>
+  );
 };
 
 export default RickAndMortyAPI;
