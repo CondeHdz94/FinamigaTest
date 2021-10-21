@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import '../assets/styles/routes/App.scss';
 import Layout from "../containers/Layout";
 import RickAndMortyAPI from '../containers/RickAndMortyList';
-import Filter from '../containers/Filter';
+import Contacts from '../containers/Contacts';
 import Home from "../pages/Home";
 import PageError from "../pages/PageError";
 
@@ -12,7 +12,7 @@ const App = () => (
       <Switch>
       <Route exact path='/' component={Home}/>
         <Route exact path='/api' component={RickAndMortyAPI}/>
-        <Route exact path='/filter' component={Filter}/>
+        <Route exact path='/filter' component={Contacts}/>
         <Route component={PageError}/>
       </Switch>
     </Layout>

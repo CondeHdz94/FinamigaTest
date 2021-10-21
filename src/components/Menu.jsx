@@ -6,7 +6,7 @@ const Menu = () => {
   return (
     <Link to="/" className="FinamigaTestBar">
       <img src={logo} alt="logo" />
-      <h1>Finamiga testing</h1>
+      <h1>Finamiga Test</h1>
     </Link>
   );
 };
