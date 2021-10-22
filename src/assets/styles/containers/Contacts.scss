@@ -19,7 +19,7 @@ select {
   box-sizing: border-box;
 }
 
-div[type="submit"] {
+.Form__btn[type="submit"] {
   width: 100%;
   background-color: var(--var-primary-color);
   color: white;
@@ -30,7 +30,11 @@ div[type="submit"] {
   cursor: pointer;
 }
 
-div[type="submit"]:hover {
+.Form__btn--Confirm[type="submit"] {
+  background-color: rgb(0, 180, 24);
+}
+
+.Form__btn[type="submit"]:hover {
   background-color: var(--var-secondary-color);
 }
 
@@ -38,7 +42,7 @@ form {
   margin-top: 30px;
   display: flex;
   justify-content: center;
-    
+
   .FormWrap {
     display: grid;
     grid-template-columns: repeat(3, 2fr) 1fr;
@@ -46,13 +50,70 @@ form {
   }
 }
 
-.ContactWrap{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.ContactWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    .ContactWrap__List .CardContact{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+  h1 {
+    margin-top: 30px;
+  }
+  .ContactWrap__List {
+    width: 80%;
+
+    img {
+      width: 25px;
+      filter: invert(48%) sepia(79%) saturate(5000%) hue-rotate(10deg)
+        brightness(118%) contrast(119%);
     }
+
+    .Title__List {
+      display: grid;
+      grid-template-columns: 0.5fr repeat(3, 2fr) 1fr;
+      place-items: center;
+      margin-top: 30px;
+      border-bottom: 2px solid gray;
+      padding-bottom: 16px;
+      img:nth-child(1) {
+        width: 15px;
+      }
+    }
+
+    .CardContact {
+      display: grid;
+      grid-template-columns: 0.5fr repeat(3, 2fr) 1fr;
+      margin-top: 8px;
+      justify-items: center;
+      align-items: center;
+
+      &:hover {
+        background-color: rgb(228, 228, 228);
+      }
+      &:hover .btnEdit {
+        display: block;
+      }
+      p {
+        color: var(--var-secondary-color);
+        font-size: var(--sm);
+        &:nth-child(1) {
+          font-size: var(--ssm);
+        }
+      }
+
+      .btnEdit {
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        display: none;
+
+        &:hover img {
+          filter: contrast(80%);
+        }
+      }
+    }
+  }
 }
