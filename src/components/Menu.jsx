@@ -4,7 +4,7 @@ import logo from "../assets/img/logo.png";
 import "../assets/styles/components/Menu.scss";
 const Menu = () => {
   return (
-    <Link to="/" className="FinamigaTestBar">
+    <Link to="/FinamigaTest" className="FinamigaTestBar">
       <img src={logo} alt="logo" />
       <h1>Finamiga Test</h1>
     </Link>
