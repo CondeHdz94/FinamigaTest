@@ -20,7 +20,6 @@ const Contacts = () => {
   const formSubmit = (data) => {
     const myList = contacts;
     if (Object.keys(edit).length > 0) {
-      debugger;
       myList[edit.index] = data;
       localStorage.setItem("contacts", JSON.stringify(myList));
       reset({});
@@ -30,15 +29,13 @@ const Contacts = () => {
       setContacts(myList);
       localStorage.setItem("contacts", JSON.stringify(myList));
       reset({});
-      console.log(data);
-      console.log(contacts);
     }
   };
 
   const editContact = (item, index) => {
     reset(item);
-    setEdit({ item, index });
-    debugger;
+    setEdit({ index });
+    document.getElementsByClassName("Form__input")[0].focus();
   };
 
   return (
@@ -49,6 +46,8 @@ const Contacts = () => {
             type="text"
             placeholder="Nombre..."
             className="Form__input"
+            autoFocus
+            name="inputFocus"
             {...register("name", { required: true })}
           />
           <input
@@ -74,6 +73,12 @@ const Contacts = () => {
           )}
         </div>
       </form>
+
+      {errors.name || errors.phone || errors.email ? (
+        <span className="infoErrorInput">Debe llenar todos los campos</span>
+      ) : (
+        <span></span>
+      )}
 
       <div className="ContactWrap">
         <h1>Listado</h1>

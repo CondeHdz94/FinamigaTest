@@ -12,7 +12,7 @@ const App = () => (
       <Switch>
       <Route exact path='/' component={Home}/>
         <Route exact path='/api' component={RickAndMortyAPI}/>
-        <Route exact path='/filter' component={Contacts}/>
+        <Route exact path='/contacts' component={Contacts}/>
         <Route component={PageError}/>
       </Switch>
     </Layout>
