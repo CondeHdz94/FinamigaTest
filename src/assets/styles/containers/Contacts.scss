@@ -47,6 +47,7 @@ form {
     display: grid;
     grid-template-columns: repeat(3, 2fr) repeat(2, 1fr);
     gap: 2rem;
+    width: 80%;
   }
 }
 
@@ -368,6 +369,14 @@ form {
     }
     100% {
       transform: scale(1);
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  form {
+    .FormWrap {
+      grid-template-columns: 1fr;
     }
   }
 }

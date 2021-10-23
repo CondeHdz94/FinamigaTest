@@ -13,7 +13,7 @@ const App = () => (
       <Route exact path='/FinamigaTest' component={Home}/>
         <Route exact path='/api' component={RickAndMortyAPI}/>
         <Route exact path='/contacts' component={Contacts}/>
-        <Route component={PageError}/>
+        <Route path="*" component={PageError}/>
       </Switch>
     </Layout>
     </BrowserRouter>
