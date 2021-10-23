@@ -35,6 +35,22 @@
         font-size: var(--sm);
       }
     }
+
+    .search__Btn {
+      background-color: var(--var-primary-color);
+      color: white;
+      padding: 14px 20px;
+      margin-left: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      height: 45px;
+
+      &:hover {
+        background-color: var(--var-secondary-color);
+        cursor: pointer;
+      }
+    }
   }
 }
 

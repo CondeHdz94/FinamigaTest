@@ -7,10 +7,13 @@ import Loading from "../components/Loading";
 const API = "https://rickandmortyapi.com/api/character?page=";
 
 const RickAndMortyAPI = () => {
-  const listAPI = useGetProducts(API);
-  const [query, setQuery] = React.useState("");
+  
+  const number = parseInt(Math.random() * 10);
+  const [countPageApi, setCountPageApi] = useState(number);
+  
+  const listAPI = useGetProducts(API, countPageApi);
   const [filter, setFilter] = useState(listAPI);
-
+  const [query, setQuery] = React.useState("");
   useEffect(() => {
     const result =
       listAPI &&
@@ -22,6 +25,11 @@ const RickAndMortyAPI = () => {
     console.log(result.length);
     setFilter(result);
   }, [listAPI, query]);
+
+  const handleClickCount = () => {
+    const numerRandom = parseInt(Math.random() * 10);
+    setCountPageApi(numerRandom === countPageApi ? parseInt(Math.random() * 10) : numerRandom);
+  };
 
   if (listAPI.length > 0) {
     return (
@@ -36,7 +44,9 @@ const RickAndMortyAPI = () => {
               className="searchTerm"
               placeholder="Buscar..."
             />
+                      <button className="search__Btn" onClick={handleClickCount}>Aleatorio</button>
           </div>
+
           <div className="Wrap__List">
             {filter.map((product) => (
               <CharacterCard
@@ -50,9 +60,7 @@ const RickAndMortyAPI = () => {
     );
   }
 
-  return (
-  <Loading/>
-  );
+  return <Loading />;
 };
 
 export default RickAndMortyAPI;
