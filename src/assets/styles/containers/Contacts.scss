@@ -50,8 +50,7 @@ form {
   }
 }
 
-
-.infoErrorInput{
+.infoErrorInput {
   color: var(--var-primary-color);
 }
 .ContactWrap {
@@ -73,7 +72,7 @@ form {
 
     .Title__List {
       display: grid;
-      grid-template-columns: 0.5fr repeat(3, 2fr) 1fr;
+      grid-template-columns: 0.5fr repeat(3, 2fr) repeat(2, 1fr);
       place-items: center;
       margin-top: 30px;
       border-bottom: 2px solid gray;
@@ -85,7 +84,7 @@ form {
 
     .CardContact {
       display: grid;
-      grid-template-columns: 0.5fr repeat(3, 2fr) 1fr;
+      grid-template-columns: 0.5fr repeat(3, 2fr) repeat(2, 1fr);
       margin-top: 8px;
       justify-items: center;
       align-items: center;

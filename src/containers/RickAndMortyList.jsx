@@ -4,7 +4,7 @@ import "../assets/styles/containers/RickAndMortyList.scss";
 import CharacterCard from "../components/CharacterCard";
 import Loading from "../components/Loading";
 
-const API = "https://rickandmortyapi.com/api/character?page=1";
+const API = "https://rickandmortyapi.com/api/character?page=";
 
 const RickAndMortyAPI = () => {
   const listAPI = useGetProducts(API);

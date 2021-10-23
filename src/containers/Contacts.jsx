@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import "../assets/styles/containers/Contacts.scss";
 import userIcon from "../assets/icons/user-solid.svg";
@@ -38,6 +38,10 @@ const Contacts = () => {
     document.getElementsByClassName("Form__input")[0].focus();
   };
 
+  useEffect(() => {
+    setContacts(JSON.parse(localStorage.getItem("contacts")) || [])
+  }, [])
+
   return (
     <>
       <form onSubmit={handleSubmit(formSubmit)}>
@@ -62,6 +66,15 @@ const Contacts = () => {
             className="Form__input"
             {...register("email", { required: true })}
           />
+          <div>
+            Favorito
+            <input
+              type="checkbox"
+              placeholder="Favorito"
+              className="Form__input"
+              {...register("fav", { required: false })}
+            />
+          </div>
           {Object.keys(edit).length > 0 ? (
             <button type="submit" className="Form__btn Form__btn--Confirm">
               Confirmar
@@ -95,6 +108,7 @@ const Contacts = () => {
               <p>{item.name}</p>
               <p>{item.phone}</p>
               <p>{item.email}</p>
+              <p>{item.fav ? <div >&#x1f31f;</div> : null}</p>
               <button className="btnEdit">
                 <img
                   src={editIcon}

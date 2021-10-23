@@ -6,7 +6,8 @@ const useGetProducts = (API) => {
 
   useEffect(() => {
     const AsyncProblem = async () => {
-      const resolve = await axios(API);
+      const number = parseInt(Math.random() * 10)
+      const resolve = await axios(`${API}${number}`);
       setProducts(resolve.data.results);
     };
     AsyncProblem();
