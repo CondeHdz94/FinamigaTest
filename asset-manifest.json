@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/FinamigaTest/static/css/main.b0a1f9f7.chunk.css",
-    "main.js": "/FinamigaTest/static/js/main.e7e13842.chunk.js",
-    "main.js.map": "/FinamigaTest/static/js/main.e7e13842.chunk.js.map",
+    "main.css": "/FinamigaTest/static/css/main.f3ea5686.chunk.css",
+    "main.js": "/FinamigaTest/static/js/main.37a011ea.chunk.js",
+    "main.js.map": "/FinamigaTest/static/js/main.37a011ea.chunk.js.map",
     "runtime-main.js": "/FinamigaTest/static/js/runtime-main.999144ca.js",
     "runtime-main.js.map": "/FinamigaTest/static/js/runtime-main.999144ca.js.map",
     "static/js/2.73be2da8.chunk.js": "/FinamigaTest/static/js/2.73be2da8.chunk.js",
     "static/js/2.73be2da8.chunk.js.map": "/FinamigaTest/static/js/2.73be2da8.chunk.js.map",
     "index.html": "/FinamigaTest/index.html",
-    "static/css/main.b0a1f9f7.chunk.css.map": "/FinamigaTest/static/css/main.b0a1f9f7.chunk.css.map",
+    "static/css/main.f3ea5686.chunk.css.map": "/FinamigaTest/static/css/main.f3ea5686.chunk.css.map",
     "static/js/2.73be2da8.chunk.js.LICENSE.txt": "/FinamigaTest/static/js/2.73be2da8.chunk.js.LICENSE.txt",
     "static/media/404Page.9a33c5a6.svg": "/FinamigaTest/static/media/404Page.9a33c5a6.svg",
     "static/media/Rick_and_Morty_logo.42c8df0b.png": "/FinamigaTest/static/media/Rick_and_Morty_logo.42c8df0b.png",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.999144ca.js",
     "static/js/2.73be2da8.chunk.js",
-    "static/css/main.b0a1f9f7.chunk.css",
-    "static/js/main.e7e13842.chunk.js"
+    "static/css/main.f3ea5686.chunk.css",
+    "static/js/main.37a011ea.chunk.js"
   ]
 }
