@@ -8,12 +8,12 @@ const Home = () => {
     return (
         <div className = "HomeContainer">
             
-            <Link to='/api' className='HomeContainer__Cards HomeContainer--RickMorty'>
+            <Link to='/FinamigaTest/api' className='HomeContainer__Cards HomeContainer--RickMorty'>
                 <img src={logo_RickMorty} alt="logo_RickMorty" />
 
             </Link>
 
-            <Link to='/contacts' className='HomeContainer__Cards'>
+            <Link to='/FinamigaTest/contacts' className='HomeContainer__Cards'>
                 <img src={contactListIcon} alt="userIcon" className=" HomeContainer__Cards--iconList"/>
                 <h1>Contactos</h1>
 

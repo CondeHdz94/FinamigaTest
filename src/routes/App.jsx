@@ -11,8 +11,8 @@ const App = () => (
     <Layout>
       <Switch>
       <Route exact path='/FinamigaTest' component={Home}/>
-        <Route exact path='/api' component={RickAndMortyAPI}/>
-        <Route exact path='/contacts' component={Contacts}/>
+        <Route exact path='/FinamigaTest/api' component={RickAndMortyAPI}/>
+        <Route exact path='/FinamigaTest/contacts' component={Contacts}/>
         <Route path="*" component={PageError}/>
       </Switch>
     </Layout>
